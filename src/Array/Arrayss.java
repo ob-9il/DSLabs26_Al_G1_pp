@@ -1,20 +1,11 @@
 package Array;
-import java.util.Scanner;
 
-public class Arrayss {
-    Scanner scanner=new Scanner(System.in);
-    public void traverSal(int []a) {
-        for (int i = 0; i < a.length; i++)
-            System.out.println("Index[" + i + "]="+a[i]);
+public class Arrayss{
+    public void update(int []a,int index,int nvalue){
+        if(index<0 || index>=a.length)
+            System.out.println("index not found");
+        else {
+            a[index] = 0;
+        }
     }
-    public  void rever_traverSal(int []a){
-        for (int i=a.length-1; i>=0;i--)
-            System.out.println("Index["+i+"]="+a[i]);
-    }
-    public void input(int []a){
-        System.out.println("Enter "+a.length+" elements:");
-        for (int i=0; i<a.length;i++)
-            a[i]=scanner.nextInt();
-    }
-
 }
